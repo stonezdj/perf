@@ -37,6 +37,8 @@ export function setup() {
 }
 
 export default function ({ projectName }) {
+    // jfrog-proxycache should setup first
+    // upstream registry should be contain these images
     let artifacts = [
         "bora-24776025/packages/vks-standard-packages@sha256:17e83405c756fb80ddf3c11161bf1e9e4f9d235facdfefedd588956460dd2572",
         "bora-24776025/packages/vks-standard-packages@sha256:41362e933c7ab65ec8ae7f10e54ebd24d9bba55bd8a109c08f3572218f9528f8",
