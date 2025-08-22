@@ -60,7 +60,7 @@ export default function ({ projectName }) {
         successRate.add(false)
         console.log(e)
     }
-    console.log(`Pulling artifact from ${projectName}/${repository}@${ref}`)
+    // console.log(`Pulling artifact from ${projectName}/${repository}@${ref}`)
 }
 
 export function teardown({ projectName }) {
