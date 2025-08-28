@@ -348,6 +348,9 @@ func addVusAndIterationsArgs(args []string) []string {
 		args = append(args, "--iterations", strconv.FormatInt(iterations, 10))
 	}
 
+	// add duration to avoid k6 error if both vus and iterations are not set
+	args = append(args, "-d", "60m")
+
 	return args
 }
 
